@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login and Registr Design</title>
+</head>
+<body>
+  
+<div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <input required tabindex="1" type="text" placeholder="Name">
+            <input required tabindex="2" type="password" placeholder="Password">
+            <input required tabindex="3" type="email" placeholder="Email">
+            <button>
+                Create
+            </button>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>
+
+        <form class="login-form">
+
+            <input required type="text" tabindex="1" placeholder="Username">
+            <input required type="password" tabindex="2" placeholder="Password">
+            <button>Login</button>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        
+        </form>
+
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $('.message a').click(function(){    
+            $('form').animate({height: "toggle",opacity: "toggle"}, "slow");
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
